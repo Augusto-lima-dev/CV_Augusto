@@ -7,5 +7,4 @@ def templates():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
-    """ <link href="meu_projeto/css/styles.css" rel="stylesheet" />"""
+    app.run( debug=True)
