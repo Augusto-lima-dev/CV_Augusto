@@ -457,6 +457,13 @@ mark,
   margin-right: 0.5rem;
 }
 
+.softicon {
+  display: inline-block;
+}
+.softicon:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
 .initialism {
   font-size: 90%;
   text-transform: uppercase;
@@ -5705,6 +5712,62 @@ a.close.disabled {
   border-style: solid;
 }
 
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+.info-list{
+  display:flex
+
+}
+
+#cards-skill{
+    position: absolute;
+    z-index:999999;
+    background-color: rgba(164, 214, 255, 0.918);
+    height:300px ;
+    width: 350px ;
+    border:2px solid black;
+    border-radius:7px;
+    box-shadow: 4px 2px 10px black;
+    text-align: center;
+
+}
+#cards-skill li {
+  position: relative;
+  white-space: nowrap;
+  list-style-type:none;
+  color: #333;
+  margin:0 0 5px -2.5em
+
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}  
+
 .bs-popover-top, .bs-popover-auto[x-placement^=top] {
   margin-bottom: 0.5rem;
 }
@@ -6077,13 +6140,13 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #052aa3 !important;
+  background-color: #001e81  !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #052aa3 !important;
+  background-color: #964a2c !important;
 }
 
 .bg-secondary {
@@ -10076,6 +10139,7 @@ p.lead {
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  z-index: 2;
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
