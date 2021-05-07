@@ -5738,7 +5738,7 @@ a.close.disabled {
 
 }
 
-#cards-skill{
+.card-skill{
     position: absolute;
     z-index:999999;
     background-color: rgba(164, 214, 255, 0.918);
@@ -5750,7 +5750,7 @@ a.close.disabled {
     text-align: center;
 
 }
-#cards-skill li {
+.card-skill li {
   position: relative;
   white-space: nowrap;
   list-style-type:none;
